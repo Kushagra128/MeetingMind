@@ -1,0 +1,74 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+*.whl
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Uploads & Recordings (keep structure, ignore content)
+uploads/*
+!uploads/.gitkeep
+recordings/session_*
+recordings/user_*/
+iot-meeting-minutes/recordings/session_*
+iot-meeting-minutes/recordings/user_*/
+iot-meeting-minutes/recordings/pdfs/
+
+# PDFs
+*.pdf
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Build
+frontend/dist/
+frontend/build/
+
+# Logs
+*.log
+logs/
+
+# Models (optional - uncomment if models are too large)
+# models/
+
+# Experiments (optional)
+# experiments/
+
+# Test outputs
+tests/output/
+
+# Duplicate config folders
+iot-meeting-minutes/config/
