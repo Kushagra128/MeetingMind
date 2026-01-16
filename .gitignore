@@ -72,3 +72,14 @@ tests/output/
 
 # Duplicate config folders
 iot-meeting-minutes/config/
+
+# Docker
+docker-compose.override.yml
+
+# Deployment
+backups/
+
+# Secrets
+*.pem
+*.key
+*.crt

@@ -1,0 +1,54 @@
+# MeetingMing Systemd Service File
+# This file allows MeetingMing to run as a system service on Linux
+# and automatically restart on server reboot
+
+# Installation:
+# 1. Copy this file to /etc/systemd/system/
+#    sudo cp meetingming.service /etc/systemd/system/
+#
+# 2. Update the paths below to match your installation
+#
+# 3. Reload systemd
+#    sudo systemctl daemon-reload
+#
+# 4. Enable service to start on boot
+#    sudo systemctl enable meetingming
+#
+# 5. Start the service
+#    sudo systemctl start meetingming
+#
+# 6. Check status
+#    sudo systemctl status meetingming
+#
+# 7. View logs
+#    sudo journalctl -u meetingming -f
+
+[Unit]
+Description=MeetingMing - Meeting Transcription Application
+After=network.target docker.service
+Requires=docker.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+WorkingDirectory=/home/ubuntu/meetingming
+ExecStart=/usr/local/bin/docker-compose up -d
+ExecStop=/usr/local/bin/docker-compose down
+TimeoutStartSec=0
+User=ubuntu
+Group=ubuntu
+
+# Restart policy
+Restart=on-failure
+RestartSec=10s
+
+# Environment
+Environment="PATH=/usr/local/bin:/usr/bin:/bin"
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=meetingming
+
+[Install]
+WantedBy=multi-user.target

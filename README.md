@@ -106,7 +106,9 @@ The project includes a Vosk model in `models/vosk-model-small-en-in-0.4/`. If yo
 
 ## 🚀 Running the Application
 
-### Start Backend Server
+### Development Mode
+
+#### Start Backend Server
 
 ```bash
 cd backend
@@ -115,7 +117,7 @@ python app.py
 
 Backend runs on: **http://localhost:5000**
 
-### Start Frontend Development Server
+#### Start Frontend Development Server
 
 ```bash
 cd frontend
@@ -123,6 +125,24 @@ npm run dev
 ```
 
 Frontend runs on: **http://localhost:5173**
+
+### Production Deployment
+
+For production deployment, see:
+
+- **[Quick Deploy Guide](QUICK_DEPLOY.md)** - Get started in 10 minutes
+- **[Deployment Guide](DEPLOYMENT.md)** - Complete deployment documentation
+- **[Deployment Checklist](DEPLOYMENT_CHECKLIST.md)** - Step-by-step checklist
+
+Quick deploy with Docker:
+
+```bash
+# Windows
+deploy.bat
+
+# Linux/Mac
+bash deploy.sh
+```
 
 ## 📖 Usage
 
