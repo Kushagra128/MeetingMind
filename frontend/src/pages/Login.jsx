@@ -34,7 +34,7 @@ const Login = () => {
           <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
             <Mic className="w-8 h-8 text-primary-600" />
           </div>
-          <h1 className="text-3xl font-bold text-gray-900">Meeting Transcriber</h1>
+          <h1 className="text-3xl font-bold text-gray-900">MeetingMing</h1>
           <p className="text-gray-600 mt-2">Sign in to your account</p>
         </div>
 

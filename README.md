@@ -1,4 +1,4 @@
-# Meeting Transcriber
+# MeetingMing
 
 A full-stack web application for recording meetings, transcribing them using offline speech-to-text (Vosk), and generating intelligent summaries.
 

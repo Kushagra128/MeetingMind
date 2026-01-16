@@ -1,5 +1,5 @@
 """
-Flask Backend API for Meeting Transcriber
+Flask Backend API for MeetingMing
 Handles user authentication, recording sessions, and file management
 """
 

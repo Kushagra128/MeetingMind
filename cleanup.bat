@@ -1,6 +1,6 @@
 @echo off
 echo ========================================
-echo Meeting Transcriber - Cleanup Script
+echo MeetingMing - Cleanup Script
 echo ========================================
 echo.
 
